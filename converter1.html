@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Converter 1</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+
+    <!-- found this framework for an xml to json converter  -->
+    <script type='text/javascript' src="https://cdn.rawgit.com/abdmob/x2js/master/xml2json.js"></script>
+    
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body background>
+
+        <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="converter1.html">converter 1</a></li>
+                <li><a href="converter2.html">converter 2</a></li>
+            </ul>
+
+    <div id="titleBlock">
+        <h1 id="heading">Converter 1</h1>
+    </div>
+    
+    <div>
+        <h2 id='heading2'> Load the XML file you want to convert!</h2>
+    </div>
+    <div class = "load_button">
+        <input type="file" onchange="openFile(event)">
+    </div>
+
+    <div class = "outputBox">
+
+        <div>
+            <h4>CSV:</h4>
+            <textarea id="csvArea" cols="55" rows="15"></textarea>
+        </div> 
+    </div>
+    
+
+</body>
+</html>
